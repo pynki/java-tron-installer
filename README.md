@@ -11,9 +11,10 @@ The [java-tron](https://github.com/tronprotocol/java-tron) repository will be cl
 
 ### Run the installer script
 
-Execute the script 
+Make the script executable and execute it 
 ```
-sudo ./java-tron-installer
+chmod +x ./java-tron-installer/install.sh
+sudo ./java-tron-installer/install.sh
 ```
 
 ## WARNING
