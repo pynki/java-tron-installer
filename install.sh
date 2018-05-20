@@ -8,7 +8,7 @@ if [ "$USER_ID" -ne "0" ]; then
 	exit 1
 fi
 
-# save the surrent directory in a variable
+# get the scripts directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 #install oracle java 8
@@ -25,9 +25,8 @@ apt-get install oracle-java8-installer -y
 update-java-alternatives -s /usr/lib/jvm/java-8-oracle
 
 #build java-tron
-cd java-tron
+cd $DIR/java-tron
 git checkout -t origin/master
-./gradlew clean shadowJar
-cd $DIR
+$DIR/gradlew clean shadowJar
 
 exit 0
