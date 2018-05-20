@@ -27,6 +27,6 @@ update-java-alternatives -s /usr/lib/jvm/java-8-oracle
 #build java-tron
 cd $DIR/java-tron
 git checkout -t origin/master
-$DIR/gradlew clean shadowJar
+./gradlew clean shadowJar
 
 exit 0
