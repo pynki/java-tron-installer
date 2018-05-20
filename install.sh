@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # check if we are root or exit
 USER_ID=$(id -u)
