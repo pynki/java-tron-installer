@@ -20,9 +20,3 @@ Make the script executable and execute it
 chmod +x ./java-tron-installer/install.sh
 sudo ./java-tron-installer/install.sh
 ```
-
-## WARNING
-
-1. The installer script right now sets the oracle java via java alternatives. This might cause conflicts with software that depends on openjdk-XY. Will fix it soon. 
-
-2. Builds the .jar file right now via `./gradlew clean shadowJar`. Working on maing it switchable with `./grandlew build`.

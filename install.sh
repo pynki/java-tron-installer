@@ -24,9 +24,10 @@ apt-get install oracle-java8-installer -y
 # ATTENTION: this might harm other software depending on openjdk!
 update-java-alternatives -s /usr/lib/jvm/java-8-oracle
 
-#build java-tron
+# build java-tron
+# after checking it it becomes clear that ./gradlew build builds the java-tron.jar file that ./gradlew clean shadowJar builds anyways...
 cd $DIR/java-tron
 git checkout -t origin/master
-./gradlew clean shadowJar
+./gradlew build 
 
 exit 0
